@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[User has successfully Logged into Amazon App]]>
+    </line>
+    <line>
+      <![CDATA[User has successfully Navigated to address page]]>
+    </line>
+    <line>
+      <![CDATA[User has Navigated successfully to Payment screen]]>
+    </line>
+    <line>
+      <![CDATA[Product Name on Search and Checkout Page are same]]>
+    </line>
+    <line>
+      <![CDATA[Product Price on Search and Checkout Page are same]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="95077" started-at="2021-03-16T12:18:48Z" finished-at="2021-03-16T12:20:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="95077" started-at="2021-03-16T12:18:48Z" finished-at="2021-03-16T12:20:23Z">
+      <class name="tests.TestCases">
+        <test-method status="PASS" signature="setUpAppium()[pri:0, instance:tests.TestCases@271053e1]" name="setUpAppium" is-config="true" duration-ms="12480" started-at="2021-03-16T12:18:48Z" finished-at="2021-03-16T12:19:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpAppium -->
+        <test-method status="PASS" signature="TC_1_Login()[pri:0, instance:tests.TestCases@271053e1]" name="TC_1_Login" duration-ms="19901" started-at="2021-03-16T12:19:01Z" finished-at="2021-03-16T12:19:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[User has successfully Logged into Amazon App]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_1_Login -->
+        <test-method status="PASS" signature="TC_2_SearchProduct()[pri:1, instance:tests.TestCases@271053e1]" name="TC_2_SearchProduct" duration-ms="28112" started-at="2021-03-16T12:19:20Z" finished-at="2021-03-16T12:19:49Z">
+          <reporter-output>
+            <line>
+              <![CDATA[User has successfully Navigated to address page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_2_SearchProduct -->
+        <test-method status="PASS" signature="TC_3_CheckOutProduct()[pri:2, instance:tests.TestCases@271053e1]" name="TC_3_CheckOutProduct" duration-ms="34325" started-at="2021-03-16T12:19:49Z" finished-at="2021-03-16T12:20:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[User has Navigated successfully to Payment screen]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_3_CheckOutProduct -->
+        <test-method status="PASS" signature="TC_4_VerifyProdcutInfo()[pri:3, instance:tests.TestCases@271053e1]" name="TC_4_VerifyProdcutInfo" duration-ms="4" started-at="2021-03-16T12:20:23Z" finished-at="2021-03-16T12:20:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Product Name on Search and Checkout Page are same]]>
+            </line>
+            <line>
+              <![CDATA[Product Price on Search and Checkout Page are same]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_4_VerifyProdcutInfo -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.TestCases@271053e1]" name="afterTest" is-config="true" duration-ms="209" started-at="2021-03-16T12:20:23Z" finished-at="2021-03-16T12:20:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.TestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
