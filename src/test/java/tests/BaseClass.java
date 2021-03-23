@@ -16,8 +16,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 
-public class BaseClass {
+public class BaseClass extends ReportingClass {
 
 	AndroidDriver<MobileElement> driver;
 	ConfigFileReader configFileReader;

@@ -28,7 +28,7 @@ public class ProductSearchPage {
 	@AndroidFindBy(xpath = "(//android.widget.LinearLayout[@resource-id='com.amazon.mShop.android.shopping:id/list_product_linear_layout'])[2]")
 	MobileElement Select_Item_List;
 
-	@AndroidFindBy(xpath = "(//android.view.View/android.view.View[3]/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View)[1]")
+	@AndroidFindBy(xpath = "//android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View")
 	public
 	MobileElement ProductName_ProductSearchScreen;
 

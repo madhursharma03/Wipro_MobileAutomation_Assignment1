@@ -7,9 +7,11 @@
         <methods>
           <include name="afterTest"/>
           <include name="setUpAppium"/>
-          <include name="TC_2_SearchProduct"/>
           <include name="TC_4_VerifyProdcutInfo"/>
+          <include name="reportSetup"/>
+          <include name="reportTeardown"/>
           <include name="TC_3_CheckOutProduct"/>
+          <include name="screenshotOnFailure"/>
         </methods>
       </class> <!-- tests.TestCases -->
     </classes>
