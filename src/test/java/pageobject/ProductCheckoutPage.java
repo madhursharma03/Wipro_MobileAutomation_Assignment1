@@ -25,7 +25,7 @@ public class ProductCheckoutPage {
 	@AndroidFindBy(xpath = "//android.view.View[@text='Net Banking']")
 	MobileElement Payment_Option;
 	
-	@AndroidFindBy(xpath = "//android.view.View/android.view.View[3]/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View[2]")
+	@AndroidFindBy(xpath = "//*[starts-with(@resource-id,'pp') and ends-with(@resource-id,'113')]")
 	MobileElement Payment_Option_DropDown;
 
 	@AndroidFindBy(xpath = "//android.view.View[@text='Axis Bank']")
@@ -34,12 +34,14 @@ public class ProductCheckoutPage {
 	@AndroidFindBy(xpath = "//android.widget.Button[@text='Continue']")
 	MobileElement Payment_Continue_Button;
 
-	@AndroidFindBy(xpath = "//android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[2]/android.view.View[4]")
+	@AndroidFindBy(xpath = "//*[@class='android.widget.Image']")
 	public
 	MobileElement ProductName_CheckOutScreen;
 
-	@AndroidFindBy(xpath = "//android.view.View/android.view.View[2]/android.view.View[3]/android.view.View[3]/android.view.View/android.view.View[3]/android.view.View[2]")
+
+	@AndroidFindBy(xpath = "//*[@text='Order Total:']/following-sibling::*")
 	MobileElement ProductPrice_CheckOutScreen;
+	
 
 	@AndroidFindBy(xpath = "//android.view.View[@text='Order now']")
 	public

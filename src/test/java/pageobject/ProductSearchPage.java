@@ -28,12 +28,15 @@ public class ProductSearchPage {
 	@AndroidFindBy(xpath = "(//android.widget.LinearLayout[@resource-id='com.amazon.mShop.android.shopping:id/list_product_linear_layout'])[2]")
 	MobileElement Select_Item_List;
 
-	@AndroidFindBy(xpath = "//android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View")
+	@AndroidFindBy(xpath = "(//android.widget.TextView[@resource-id='com.amazon.mShop.android.shopping:id/item_title'])[2]")
 	public
 	MobileElement ProductName_ProductSearchScreen;
 
-	@AndroidFindBy(xpath = "//android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View/android.widget.EditText")
+	@AndroidFindBy(xpath = "//android.widget.EditText[contains(@text,'rupees')]")
+	public
 	MobileElement ProductPrice_ProductSearchScreen;
+	//@AndroidFindBy(xpath = "//android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View/android.widget.EditText")
+	//MobileElement ProductPrice_ProductSearchScreen;
 
 	@AndroidFindBy(xpath = "//android.view.View[@resource-id='a-autoid-15']")
 	public 

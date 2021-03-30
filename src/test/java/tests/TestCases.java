@@ -50,7 +50,7 @@ class TestCases extends BaseClass {
 	boolean CheckOutScreen_Displayed;
 
 	@Test(priority=0)
-	public void TC_1_Login() throws IOException{
+	public void TC_1_Login() throws IOException, InterruptedException{
 
 		// creates a toggle for the given test, adds all log events under it    
 		ExtentTest test1 = extent.createTest("TC_1_Login", "Verify if user has logged in successfully");
@@ -111,10 +111,10 @@ class TestCases extends BaseClass {
 		driver.pressKey(new KeyEvent(AndroidKey.ENTER));
 		test2.log(Status.PASS, "User has cliked on ENter key from Device keyboard");
 		System.out.println("After Enter Key");
-		objProductSearchPage.selectItemFromList();
-		test2.log(Status.PASS, "User has selected one Item form the Searched Item List");
 		ProductName_SearchScreen = objProductSearchPage.getProductNameSearchScreen();
 		System.out.println("Product Name Search Screen - " +ProductName_SearchScreen);
+		objProductSearchPage.selectItemFromList();
+		test2.log(Status.PASS, "User has selected one Item form the Searched Item List");
 		ProductPrice_SearchScreen = objProductSearchPage.getProductPriceSearchScreen();
 		System.out.println("Product Price Search Screen - " +ProductPrice_SearchScreen);
 
@@ -178,7 +178,7 @@ class TestCases extends BaseClass {
 		System.out.println("ProductPrice_CheckOutScreen = " +ProductPrice_CheckOutScreen);
 
 		//Swipe down to Product Name info
-		ResuableFunctions.scrollToText(driver,"Return Policy");
+		ResuableFunctions.scrollToId(driver,"change-shipoption-button-announce");
 
 		ProductName_CheckOutScreen = objProductCheckoutPage.getProductNameCheckOutScreen();
 		System.out.println("ProductName_CheckOutScreen = " +ProductName_CheckOutScreen);
